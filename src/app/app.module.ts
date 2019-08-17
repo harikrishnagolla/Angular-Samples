@@ -40,7 +40,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
-
+import { MatFormFieldModule } from '@angular/material';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -56,6 +56,7 @@ import { MenuComponent } from './component/menu/menu.component';
 import { LogoutComponent } from './component/logout/logout.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { WelcomeComponent } from './component/welcome/welcome.component';
+import { AddNewBookComponent } from './component/add-new-book/add-new-book.component';
 
 
 
@@ -69,7 +70,8 @@ import { WelcomeComponent } from './component/welcome/welcome.component';
     MenuComponent,
     LogoutComponent,
     FooterComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    AddNewBookComponent
   ],
   imports: [
     HttpClientModule,
@@ -77,6 +79,7 @@ import { WelcomeComponent } from './component/welcome/welcome.component';
     BrowserModule,
     AppRoutingModule,
     DemoMaterialModule,
+    MatFormFieldModule,
     ReactiveFormsModule
   ],
   providers: [],

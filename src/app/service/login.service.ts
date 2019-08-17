@@ -52,6 +52,4 @@ isUserLoggedIn(){
   return !(user == null);
 }
 
-
-
 }
