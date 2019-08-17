@@ -1,0 +1,10 @@
+
+ <mat-toolbar class="mat-primary">
+    <span>Admin Portal</span>
+    <span> {{loggedIn}}</span>
+    <button *ngIf="loggedIn" mat-button>View Book List</button>
+    <button [hidden]="!loggedIn" mat-button>Add a Book</button>
+    <button [hidden]="!loggedIn" (click)="this.logout()" mat-button>Logout</button>
+    <button [hidden]="loggedIn" (click)="this.showLogin()" mat-button>Login</button>
+</mat-toolbar> 
+
